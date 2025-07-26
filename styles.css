@@ -514,7 +514,8 @@ input, textarea{
     font-family: inherit;
     border-radius: 8px;
     background-color: rgba(10, 10, 15, 0.6);
-    border: 1px solid rgba(120, 146, 251, 0.2);
+    border: none;
+    border-bottom: 1px solid rgba(120, 146, 251, 06);
     backdrop-filter: blur(10px);
     color: #fff;
     transition: all 0.4s ease;
@@ -567,7 +568,7 @@ textarea{
     position:absolute ;
     left: 40%;
     width: 850px;
-    height: 850px;
+    height: 650px;
     pointer-events: none;
     border-radius: 50%;
     background: radial-gradient(ellipse 60% 40% at 60% 40%, rgba(58,139,180,0.38) 0%, rgba(131,58,180,0.27) 60%, rgba(252,69,124,0.1) 100%);
@@ -593,4 +594,43 @@ textarea{
 
 .send-button:hover{
     background-color: #a679ff;
+}
+
+
+
+footer{
+    margin-top: 10rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-top: 1px solid var(--secondary-color);
+    padding: 3rem 0 ;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+}
+
+
+.footer-name{
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+
+hr{
+    align-self: center;
+    width: 80vw;
+}
+
+
+.footer-copyright, .footer-illustrations-anchor{
+    align-self: center;
+    color: var(--text-color);
+    font-size: 0.7rem;
 }
