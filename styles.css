@@ -456,3 +456,141 @@ section{
 }
 
 
+/* contact styles */
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+.contact-heading{
+    font-size: 3rem;
+}
+
+
+.contact-info{
+    display: flex;
+    gap: 5rem;
+    margin-top: 2rem;
+}
+
+
+#contact-form{
+    display: grid;
+    grid-template-areas:
+                         "first last"
+                         "email phone"
+                         "topic topic"
+                         "message message"
+                         "submit submit";
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 12px;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-info-heading{
+    color: var(--heading-color);
+    font-size: 2rem;
+}
+
+
+.input1{grid-area: first;}
+.input2{grid-area: last;}
+.input3{grid-area: phone;}
+.input4{grid-area: email;}
+.input5{grid-area: topic;}
+.input6{grid-area:message;}
+.send-button{grid-area:submit;}
+
+
+input, textarea{
+    padding: 1rem;
+    font-family: inherit;
+    border-radius: 8px;
+    background-color: rgba(10, 10, 15, 0.6);
+    border: 1px solid rgba(120, 146, 251, 0.2);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    transition: all 0.4s ease;
+}
+
+input:hover, textarea:hover, input:focus, textarea:focus{
+    border-color: var(--secondary-color);
+}
+
+textarea{
+    resize: vertical;
+    min-height: 200px;
+}
+
+.contact-personal-information{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.contact-info-block{
+    width: 100%;
+    padding: 1rem 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    gap: 10px;
+    border-radius: 8px;
+    flex-direction: column;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+.contact-info-block-small-heading{
+    font-size: 0.8rem;
+    color: var(--text-color);
+}
+
+
+.info-block-content{
+    color: var(--primary-color);
+}
+
+.contact-info-block:hover{
+    border-color: var(--secondary-color);
+}
+
+
+.background-particle {
+    position:absolute ;
+    left: 40%;
+    width: 850px;
+    height: 850px;
+    pointer-events: none;
+    border-radius: 50%;
+    background: radial-gradient(ellipse 60% 40% at 60% 40%, rgba(58,139,180,0.38) 0%, rgba(131,58,180,0.27) 60%, rgba(252,69,124,0.1) 100%);
+    filter: blur(40px);
+    opacity: 0.7;
+    z-index: -1;
+}
+
+
+
+.send-button{
+    padding: 10px 20px;
+    background-color: var(--helper-color);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    color: var(--heading-color);
+    text-decoration: none;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.send-button:hover{
+    background-color: #a679ff;
+}
