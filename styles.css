@@ -49,6 +49,9 @@ body {
     color: var(--heading-color);
 }
 
+a{
+    cursor: pointer;
+}
 
 header{
     position: sticky;
@@ -137,9 +140,9 @@ section{
 .background-gradient {
     position: absolute;
     top: 5%;
-    left: 15%;
+    left: 10%;
     width: 700px;
-    height: 700px;
+    height: 600px;
     pointer-events: none;
     border-radius: 50%;
     background: radial-gradient(ellipse 60% 40% at 60% 40%, #3a8bb461 0%, #833ab445 60%, #fc457c1a 100%);
@@ -465,8 +468,6 @@ section{
     flex-direction: column;
     gap: 1rem;
     align-items: center;
-    position: relative;
-    overflow: hidden;
 
 }
 
@@ -652,6 +653,11 @@ hr{
         padding: 0 6rem;
     }
 
+    .contact{
+        position: relative;
+        overflow: hidden;
+    }
+
     .hero-heading{
         font-size: 3.5rem;
     }
@@ -687,6 +693,7 @@ hr{
         padding: 0 2rem;
     }
 
+
     .hero-heading{
         font-size: 2.8rem;
     }
@@ -708,6 +715,9 @@ hr{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .title{
+        text-align: center;
     }
 
     .about .title{
@@ -757,6 +767,11 @@ hr{
         gap: 0.5rem;
     }
 
+    .view-work-button{
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
     .hero-text {
         font-size: 0.9rem;
         max-width: 95vw;
@@ -793,13 +808,16 @@ hr{
     .about-heading {
         font-size: 1.4rem;
     }
-
-    .about-subheading {
+    .about-text{
         font-size: 1rem;
     }
 
+    .about-subheading {
+        font-size: 1.rem;
+    }
+
     .portfolio-heading {
-        font-size: 1.4rem;
+        font-size: 2.5rem;
     }
 
     .portfolio-text {
@@ -840,7 +858,7 @@ hr{
     .offer-heading,
     .whyme-heading,
     .contact-heading {
-        font-size: 1.3rem;
+        font-size: 2.5rem;
     }
 
     .offer-cards-container {
@@ -857,11 +875,15 @@ hr{
     }
 
     .offer-card-heading {
-        font-size: 1.1rem;
+        font-size: 2rem;
+    }
+
+    .offer-card-text{
+        font-size: 1.2rem
     }
 
     .offer-subheading {
-        font-size: 1rem;
+        font-size: 1.7rem;
     }
 
     .offer-text,
@@ -882,7 +904,11 @@ hr{
     }
 
     .whyme-block-heading {
-        font-size: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .second-block{
+        flex-direction: column-reverse;
     }
 
     .contact-info {
@@ -947,5 +973,13 @@ hr{
     .footer-illustrations-anchor {
         font-size: 0.6rem;
         padding: 0 0.5rem;
+    }
+}
+
+
+@media (max-width: 400px){
+    header{
+        flex-direction: column;
+        gap: 1rem;
     }
 }
