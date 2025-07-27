@@ -95,6 +95,11 @@ nav .link:hover {
 }
 
 
+#status-element{
+    width: fit-content;
+    align-self: center;
+}
+
 section{
     max-width: 1200px;
     width: 100%;
@@ -499,6 +504,7 @@ section{
     border-radius: 12px;
     background: none;
     border: 1px solid rgba(255, 255, 255, 0.2);
+    max-width: 450px;
 }
 
 .contact-info-heading{

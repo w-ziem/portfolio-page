@@ -28,7 +28,7 @@ document.querySelectorAll("#home-link").forEach(button => {
 
 const form = document.getElementById("contact-form");
 const statusElement = document.querySelector("#status-element");
-const URL = "https://script.google.com/macros/s/AKfycbzfIs4nm-pbEnbTEbeXKd5LaEaBoILyvINVPYCsE6J1MC5q6e7xB05XT4KhwimvLodGjw/exec";
+const URL = "https://script.google.com/macros/s/AKfycbyKy34Y2d8V5fpc2Vbehvd2xU0LADfoXluAN9Qd5sslKmiaUmFexMG0ysnxQiTqOV4-EA/exec";
 
 
 form.addEventListener('submit', e => {
