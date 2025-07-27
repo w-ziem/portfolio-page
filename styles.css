@@ -757,6 +757,10 @@ hr{
     .contact-info{
         flex-direction: column;
     }
+
+    .link{
+        font-size: 1rem;
+    }
 }
 
 /* --- Responsive design for smaller screens --- */
